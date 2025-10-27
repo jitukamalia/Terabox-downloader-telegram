@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UstV</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="container header">
+    <a class="brand" href="./index.html"><img src="./logo.png" alt="Logo"></a>
+    <div>
+      <button id="menuToggle" class="icon-btn" aria-label="Open menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu hidden">
+      <button id="adminBtn" class="btn outline gold">GOLD VIDEO</button>
+      <button id="freeVideoBtn" class="btn outline free-video">FREE VIDEO</button>
+      <a href="https://youtu.be/n2dVFdqMYGA?si=s85MKw5HdlKTOBuW" target="_blank" class="btn telegram">TELEGRAM</a>
+    </div>
+
+  </header>
+
+  <main class="container">
+    <section id="tagsContainer" class="tags-filter"></section>
+    <section id="products" class="grid"><div class="loading">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div></section>
+  </main>
+
+  
+
+  <section id="videoModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Free Video</h3>
+        <button id="closeVideo" class="icon-btn" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="video-wrapper">
+          <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="Free Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container footer">Free Video available in TELEGRAM</footer>
+
+  <script type="module" src="./js/app.js" defer></script>
+</body>
+</html>
